@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Explore thoughtful editorial stories from The Sunday Edit.">
+
+  <title>Article | The Sunday Edit</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="articles.js" defer></script>
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">
+    Skip to content
+  </a>
+
+  <!-- Reading Progress -->
+
+  <div class="reading-progress" aria-hidden="true">
+    <div id="readingProgress" class="reading-progress-bar"></div>
+  </div>
+
+  <!-- Header -->
+
+  <header class="site-header">
+
+    <div class="top-bar">
+
+      <span>An independent digital magazine</span>
+
+      <button id="themeToggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="Dark mode"
+        aria-pressed="false">
+
+        <span aria-hidden="true">◐</span>
+
+      </button>
+
+    </div>
+
+    <div class="masthead">
+
+      <a href="index.html" class="brand">
+        The Sunday Edit<span>.</span>
+      </a>
+
+      <p>Stories worth slowing down for.</p>
+
+    </div>
+
+    <!-- Navigation -->
+
+    <nav class="site-nav" aria-label="Main navigation">
+
+      <button id="menuToggle"
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navLinks">
+
+        Menu <span aria-hidden="true">☰</span>
+
+      </button>
+
+      <ul id="navLinks" class="nav-links">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li>
+          <a href="index.html?category=Culture#latest">
+            Culture
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html?category=Travel#latest">
+            Travel
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html?category=Art#latest">
+            Art
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html?category=Design#latest">
+            Design
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- Main Content -->
+
+  <main id="main-content">
+
+    <!-- Dynamic Article Template -->
+
+    <article id="articleDetail"
+      class="article-detail"
+      aria-labelledby="articleTitle"
+      hidden>
+
+      <header class="article-detail-header">
+
+        <span id="articleCategory"
+          class="article-category">
+        </span>
+
+        <h1 id="articleTitle"></h1>
+
+        <p id="articleDescription"
+          class="featured-description">
+        </p>
+
+        <div class="article-meta">
+
+          <span id="articleAuthor"></span>
+
+          <span aria-hidden="true">·</span>
+
+          <span id="articleReadTime"></span>
+
+        </div>
+
+      </header>
+
+      <!-- Article Image -->
+
+      <figure class="article-detail-image">
+
+        <img id="articleImage"
+          alt=""
+          width="1200"
+          height="750"
+          fetchpriority="high">
+
+      </figure>
+
+      <!-- Article Content -->
+
+      <div id="articleBody"
+        class="article-body">
+      </div>
+
+      <!-- Return to Story Directory -->
+
+      <a href="index.html#latest"
+        class="back-link">
+
+        <span aria-hidden="true">←</span>
+        Back to all stories
+
+      </a>
+
+    </article>
+
+    <!-- Article Not Found -->
+
+    <section id="articleError"
+      class="editorial-intro"
+      hidden>
+
+      <span class="eyebrow">404 / Story not found</span>
+
+      <h1>Every story begins somewhere.</h1>
+
+      <p>
+        The article you're looking for could not be found.
+        Explore our latest stories to discover something new.
+      </p>
+
+      <a href="index.html#latest"
+        class="read-link">
+
+        Explore our stories
+        <span aria-hidden="true">↗</span>
+
+      </a>
+
+    </section>
+
+    <noscript>
+
+      <section class="editorial-intro">
+
+        <h1>JavaScript is required</h1>
+
+        <p>
+          Please enable JavaScript to read this article.
+        </p>
+
+        <a href="index.html" class="read-link">
+          Return to homepage
+        </a>
+
+      </section>
+
+    </noscript>
+
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="site-footer">
+
+    <div class="footer-content">
+
+      <a href="index.html" class="footer-brand">
+        The Sunday Edit.
+      </a>
+
+      <p>Stay curious. Keep exploring.</p>
+
+      <nav aria-label="Footer navigation">
+
+        <a href="index.html">Home</a>
+
+        <a href="index.html#latest">
+          Latest stories
+        </a>
+
+        <a href="#main-content">
+          Back to top ↑
+        </a>
+
+      </nav>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <p>&copy; 2026 The Sunday Edit.</p>
+
+      <p>An independent editorial portfolio project.</p>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

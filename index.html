@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="The Sunday Edit is an independent digital magazine exploring culture, travel, art, and design.">
+
+  <title>The Sunday Edit | Stories Worth Slowing Down For</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">
+    Skip to content
+  </a>
+
+  <!-- Header -->
+  <header class="site-header">
+
+    <div class="top-bar">
+      <span>An independent digital magazine</span>
+
+      <button id="themeToggle" class="theme-toggle"
+        type="button" aria-label="Dark mode"
+        aria-pressed="false">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </div>
+
+    <div class="masthead">
+      <a href="index.html" class="brand">
+        The Sunday Edit<span>.</span>
+      </a>
+
+      <p>Stories worth slowing down for.</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="site-nav" aria-label="Main navigation">
+
+      <button id="menuToggle" class="menu-toggle"
+        type="button" aria-expanded="false"
+        aria-controls="navLinks">
+        Menu <span aria-hidden="true">☰</span>
+      </button>
+
+      <ul id="navLinks" class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="#latest" data-nav-category="Culture">Culture</a></li>
+        <li><a href="#latest" data-nav-category="Travel">Travel</a></li>
+        <li><a href="#latest" data-nav-category="Art">Art</a></li>
+        <li><a href="#latest" data-nav-category="Design">Design</a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <main id="main-content">
+
+    <!-- Featured Story -->
+    <section class="featured-section" aria-labelledby="featuredHeading">
+
+      <div class="featured-image">
+        <img
+          src="images/kyoto.jpg"
+          alt="A quiet traditional street in Kyoto, Japan"
+          width="1200"
+          height="900"
+          fetchpriority="high"
+        >
+      </div>
+
+      <div class="featured-content">
+
+        <span class="eyebrow">The Sunday Feature / 01</span>
+
+        <span class="article-category">Travel</span>
+
+        <h1 id="featuredHeading">
+          The Art of Getting Lost in Kyoto
+        </h1>
+
+        <p class="featured-description">
+          Beyond the crowded temples and familiar tourist routes,
+          a quieter Kyoto reveals itself to those willing to wander.
+        </p>
+
+        <div class="article-meta">
+          <span>By The Editors</span>
+          <span aria-hidden="true">·</span>
+          <span>8 min read</span>
+        </div>
+
+        <a href="article.html?story=kyoto" class="read-link">
+          Read the story
+          <span aria-hidden="true">↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- Editorial Introduction -->
+    <section class="editorial-intro" aria-labelledby="introHeading">
+
+      <span class="eyebrow">A different perspective</span>
+
+      <h2 id="introHeading">
+        Curiosity is a way of seeing the world.
+      </h2>
+
+      <p>
+        Discover thoughtful stories about the places we visit,
+        the things we create, and the ideas that shape everyday life.
+      </p>
+
+    </section>
+
+    <!-- Latest Stories -->
+    <section id="latest" class="latest-section" aria-labelledby="latestHeading">
+
+      <div class="section-heading">
+
+        <div>
+          <span class="eyebrow">The journal</span>
+          <h2 id="latestHeading">Latest stories</h2>
+        </div>
+
+        <p id="articleCount" role="status">
+          6 stories
+        </p>
+
+      </div>
+
+      <!-- Category Filters -->
+      <div class="article-filters" role="group" aria-label="Filter stories">
+
+        <button class="filter-btn active" type="button"
+          data-category="all" aria-pressed="true">
+          All stories
+        </button>
+
+        <button class="filter-btn" type="button"
+          data-category="Culture" aria-pressed="false">
+          Culture
+        </button>
+
+        <button class="filter-btn" type="button"
+          data-category="Travel" aria-pressed="false">
+          Travel
+        </button>
+
+        <button class="filter-btn" type="button"
+          data-category="Art" aria-pressed="false">
+          Art
+        </button>
+
+        <button class="filter-btn" type="button"
+          data-category="Design" aria-pressed="false">
+          Design
+        </button>
+
+      </div>
+
+      <!-- Article Grid -->
+      <div class="article-grid">
+
+        <!-- Article 1 -->
+        <article class="article-card" data-category="Design">
+
+          <div class="article-image">
+            <img src="images/architecture.jpg"
+              alt="Minimalist architecture with geometric concrete forms"
+              width="800" height="600" loading="lazy">
+          </div>
+
+          <div class="card-content">
+
+            <span class="article-category">Design</span>
+
+            <h3>Finding Beauty in Simplicity</h3>
+
+            <p>
+              Why thoughtful architecture reminds us that
+              less can sometimes mean so much more.
+            </p>
+
+            <div class="card-footer">
+
+              <span>5 min read</span>
+
+              <a href="article.html?story=architecture"
+                aria-label="Read Finding Beauty in Simplicity">
+                Read story <span aria-hidden="true">↗</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-card" data-category="Art">
+
+          <div class="article-image">
+            <img src="images/art.jpg"
+              alt="Paintings displayed inside a contemporary art gallery"
+              width="800" height="600" loading="lazy">
+          </div>
+
+          <div class="card-content">
+
+            <span class="article-category">Art</span>
+
+            <h3>The Quiet Language of Art</h3>
+
+            <p>
+              Exploring the powerful connections between
+              creativity, emotion, and human experience.
+            </p>
+
+            <div class="card-footer">
+
+              <span>6 min read</span>
+
+              <a href="article.html?story=art"
+                aria-label="Read The Quiet Language of Art">
+                Read story <span aria-hidden="true">↗</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-card" data-category="Culture">
+
+          <div class="article-image">
+            <img src="images/coffee.jpg"
+              alt="A cup of coffee on a wooden cafe table"
+              width="800" height="600" loading="lazy">
+          </div>
+
+          <div class="card-content">
+
+            <span class="article-category">Culture</span>
+
+            <h3>In Praise of Slow Mornings</h3>
+
+            <p>
+              Rediscovering the small rituals that give
+              everyday life a deeper sense of meaning.
+            </p>
+
+            <div class="card-footer">
+
+              <span>4 min read</span>
+
+              <a href="article.html?story=coffee"
+                aria-label="Read In Praise of Slow Mornings">
+                Read story <span aria-hidden="true">↗</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- Article 4 -->
+        <article class="article-card" data-category="Travel">
+
+          <div class="article-image">
+            <img src="images/mountains.jpg"
+              alt="A winding hiking trail through a mountain landscape"
+              width="800" height="600" loading="lazy">
+          </div>
+
+          <div class="card-content">
+
+            <span class="article-category">Travel</span>
+
+            <h3>Where the Mountains Meet the Sky</h3>
+
+            <p>
+              A journey into the wilderness and the unexpected
+              clarity that comes from disconnecting.
+            </p>
+
+            <div class="card-footer">
+
+              <span>7 min read</span>
+
+              <a href="article.html?story=mountains"
+                aria-label="Read Where the Mountains Meet the Sky">
+                Read story <span aria-hidden="true">↗</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- Article 5 -->
+        <article class="article-card" data-category="Design">
+
+          <div class="article-image">
+            <img src="images/books.jpg"
+              alt="A collection of thoughtfully designed books"
+              width="800" height="600" loading="lazy">
+          </div>
+
+          <div class="card-content">
+
+            <span class="article-category">Design</span>
+
+            <h3>Objects That Tell Stories</h3>
+
+            <p>
+              How everyday objects become meaningful through
+              craftsmanship, design, and memory.
+            </p>
+
+            <div class="card-footer">
+
+              <span>5 min read</span>
+
+              <a href="article.html?story=books"
+                aria-label="Read Objects That Tell Stories">
+                Read story <span aria-hidden="true">↗</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- Article 6 -->
+        <article class="article-card" data-category="Culture">
+
+          <div class="article-image">
+            <img src="images/market.jpg"
+              alt="Colorful produce displayed at a local market"
+              width="800" height="600" loading="lazy">
+          </div>
+
+          <div class="card-content">
+
+            <span class="article-category">Culture</span>
+
+            <h3>A Seat at the Local Table</h3>
+
+            <p>
+              Discovering how food brings people together
+              across languages, cultures, and borders.
+            </p>
+
+            <div class="card-footer">
+
+              <span>6 min read</span>
+
+              <a href="article.html?story=market"
+                aria-label="Read A Seat at the Local Table">
+                Read story <span aria-hidden="true">↗</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- Editorial Quote -->
+    <section class="quote-section" aria-label="Our editorial philosophy">
+
+      <blockquote>
+        “There is always something extraordinary
+        hidden within the ordinary.”
+      </blockquote>
+
+      <p>— The Sunday Edit</p>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <div class="footer-content">
+
+      <a href="index.html" class="footer-brand">
+        The Sunday Edit.
+      </a>
+
+      <p>Stay curious. Keep exploring.</p>
+
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="#latest">Latest stories</a>
+        <a href="#main-content">Back to top ↑</a>
+      </nav>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <p>&copy; 2026 The Sunday Edit.</p>
+
+      <p>An independent editorial portfolio project.</p>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
