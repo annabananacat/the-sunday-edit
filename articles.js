@@ -340,3 +340,38 @@ if (articleDetail && articleError) {
   }
 
 }
+
+// ========================================
+// 7. Synchronize Homepage Reading Times
+// ========================================
+
+document.querySelectorAll(
+  '.article-card, .featured-section'
+).forEach(card => {
+
+  const link = card.querySelector(
+    'a[href*="story="]'
+  );
+
+  if (!link) return;
+
+  const url = new URL(link.href);
+
+  const id = url.searchParams.get("story");
+
+  if (!Object.prototype.hasOwnProperty.call(articles, id)) {
+    return;
+  }
+
+  const article = articles[id];
+
+  const readTime = card.classList.contains("featured-section")
+    ? card.querySelector(".article-meta span:last-child")
+    : card.querySelector(".card-footer > span");
+
+  if (readTime) {
+    readTime.textContent =
+      calculateReadingTime(article.content);
+  }
+
+});
