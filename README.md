@@ -1,12 +1,9 @@
 
 # The Sunday Edit
 
-A responsive, interactive editorial website exploring culture,
-travel, art, and design.
+A responsive, interactive editorial website exploring culture, travel, art, and design.
 
-Built as a frontend development portfolio project with an
-emphasis on digital publishing, accessibility, performance,
-and reusable architecture.
+Built as a frontend development portfolio project with an emphasis on digital publishing, accessibility, performance, and reusable architecture.
 
 ## Project Links
 
@@ -15,7 +12,7 @@ and reusable architecture.
 
 ## Project Preview
 
-![The Sunday Edit homepage](./images/screenshot.png)
+![The Sunday Edit homepage](images/screenshot.png)
 
 ## Features
 
@@ -47,22 +44,16 @@ and reusable architecture.
 
 ## Design System
 
-The visual design draws inspiration from independent
-editorial publications.
+The visual design draws inspiration from independent editorial publications.
 
-The interface combines oversized serif typography,
-warm neutral colors, terracotta accents, editorial
-photography, and generous whitespace.
+The interface combines oversized serif typography, warm neutral colors, terracotta accents, editorial photography, and generous whitespace.
 
-Reusable CSS variables maintain visual consistency
-across light and dark themes.
+Reusable CSS variables maintain visual consistency across light and dark themes.
 
 ## Accessibility
 
-Accessibility considerations include:
-
 - Semantic HTML structure
-- Descriptive image alternative text
+- Image alternative text
 - Skip-to-content navigation
 - Accessible button states
 - Visible keyboard focus indicators
@@ -73,12 +64,9 @@ Accessibility considerations include:
 
 ## Performance Optimization
 
-The initial Lighthouse audit returned a performance
-score of 39.
+The initial Lighthouse audit returned a performance score of 39.
 
-Image resizing and compression reduced the combined
-photograph file size from approximately 25 MB to 2 MB,
-representing a 92% reduction after initial optimization.
+Image resizing and compression reduced the combined photograph file size from approximately 25 MB to 2 MB, representing a 92% reduction after initial optimization.
 
 Additional optimization strategies include:
 
@@ -93,20 +81,18 @@ Additional optimization strategies include:
 
 Live homepage audit — November 22, 2026.
 
-| Category | Score |
-| --- | --- |
-| Performance | 93 |
-| Accessibility | 100 |
-| Best Practices | 96 |
-| SEO | 100 |
+| Category | Initial | Final |
+| --- | --- | --- |
+| Performance | 39 | 93 |
+| Accessibility | 100 | 100 |
+| Best Practices | 96 | 96 |
+| SEO | 100 | 100 |
 
-![Lighthouse audit results](./images/lighthouse.png)
+![Lighthouse audit results](images/lighthouse.png)
 
-Performance improved from an initial local score of 39
-to a live website score of 93.
+Performance improved from an initial local score of 39 to a live website score of 93.
 
-Lighthouse scores may vary depending on the testing
-environment, browser activity, and network conditions.
+Lighthouse scores may vary depending on the testing environment, browser activity, and network conditions.
 
 ## Project Architecture
 
@@ -133,12 +119,9 @@ No external dependencies or build tools are required.
 
 ## Project Limitations
 
-This project uses client-side article rendering and
-sample editorial content rather than a production CMS.
+This project uses client-side article rendering and sample editorial content rather than a production CMS.
 
-Automated Lighthouse accessibility results complement,
-but do not replace, comprehensive manual accessibility
-testing.
+Automated Lighthouse accessibility results complement, but do not replace, comprehensive manual accessibility testing.
 
 ## Future Improvements
 
@@ -152,9 +135,4 @@ testing.
 
 ## Credits
 
-Photography sourced from Unsplash.
-
-Sample editorial content created with AI assistance.
-
-Designed and developed as a frontend portfolio project
-by Anna Wolansky.
+Designed and developed as a frontend portfolio project by Anna Wolansky.
